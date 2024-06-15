@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>
+        Triangulator
+    </title>
+
+    <link rel="icon" href="app/favicon.png">
+    <link rel="stylesheet" href="app/styles.css">
+
+    <script src="app/app.js"></script>
+</head>
+
+<body onload>
+    <p class="text text-large"><strong>Triangulator</strong></p>
+
+    <br>
+
+    <p class="text text-medium">Position 1:</p>
+
+    <label class="text text-small" for="x1">X:</label>
+    <input type="text" class="input" id="x1" size="3" />
+    <label class="text text-small" for="y1">Y:</label>
+    <input type="text" class="input" id="y1" size="3" />
+    <label class="text text-small" for="angle1">Angle:</label>
+    <input type="text" class="input" id="angle1" size="2" />
+    <label class="text text-small" for="angle1">°</label>
+
+    <p class="text text-medium">Position 2:</p>
+
+    <label class="text text-small" for="x2">X:</label>
+    <input type="text" class="input" id="x2" size="3" />
+    <label class="text text-small" for="y2">Y:</label>
+    <input type="text" class="input" id="y2" size="3" />
+    <label class="text text-small" for="angle2">Angle:</label>
+    <input type="text" class="input" id="angle2" size="2" />
+    <label class="text text-small" for="angle2">°</label>
+
+    <br>
+
+    <label class="text text-small" for="angel-offset">Angle Offset:</label>
+    <input type="text" class="input" id="angle-offset" size="1" value="-90" />
+    <label class="text text-small" for="angle-offset">°</label>
+
+    <br>
+
+    <p class="text text-medium">Triangulated Location:</p>
+    <p class="text text-small text-result" id="result-x"></p>
+    <p class="text text-small text-result" id="result-y"></p>
+    <p class="text text-small text-result" id="result-xzy"></p>
+    <p class="text text-small text-result" id="result-point"></p>
+
+    <br>
+
+    <p class="text text-medium">Info:</p>
+    <p class="text text-small text-result" id="result-distance"></p>
+    <p class="text text-small text-result" id="result-trajectory1"></p>
+    <p class="text text-small text-result" id="result-trajectory2"></p>
+    <p class="text text-small text-result" id="result-parsed-angle1"></p>
+    <p class="text text-small text-result" id="result-parsed-angle2"></p>
+
+    <br>
+    <p class="text text-medium">Notes:</p>
+    <p class="text text-small">For <strong>Minecraft</strong>, set the <em>Angle
+            Offset</em> to <em>-90</em></p>
+    <p class="text text-small">The Y coordinate is actually the Z coordinate in Minecraft's case. In Minecraft, the Y
+        coordinate is the vertical axis.</p>
+
+    <br>
+
+    <canvas style="border: 1px solid grey;" id="graph-canvas" width="500" height="500"></canvas>
+
+</body>
+
+</html>
